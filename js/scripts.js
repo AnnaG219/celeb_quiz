@@ -9,12 +9,24 @@ $(document).ready(function() {
 
     // if (age) {
       if (age >= 18 && gender === "female") {
+        $('#date2').hide();
+        $('#date3').hide();
+        $('#date4').hide();
         $('#date').show();
       } else if ( age <= 18 && gender === "female")  {
+        $('#date').hide();
+        $('#date3').hide();
+        $('#date4').hide();
         $('#date2').show();
       } else if (age >= 18 && gender === "male") {
+        $('#date2').hide();
+        $('#date').hide();
+        $('#date4').hide();
         $('#date3').show();
       } else {
+        $('#date2').hide();
+        $('#date3').hide();
+        $('#date').hide();
         $('#date4').show();
       }
 
