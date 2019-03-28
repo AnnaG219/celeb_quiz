@@ -1,0 +1,7 @@
+.btn {
+  display: block;
+}
+
+#date, #date2, #date3, #date4 {
+  display: none;
+}
